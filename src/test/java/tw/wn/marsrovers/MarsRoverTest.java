@@ -14,19 +14,19 @@ public class MarsRoverTest {
             "MMRMMRMRRM");
     @Test
     public void inputAndOutput() {
-        assertEquals(output, "1 3 N\n" +
-                "5 1 E\n");
+        assertEquals(output, "1 2 N\n" +
+                "3 3 E\n");
     }
 
     @Test
     public void display12NRover(){
         Rover rover = marsRover.getRover(0);
-        assertEquals(MarsRovers.display(rover), "1 3 N");
+        assertEquals(MarsRovers.display(rover), "1 2 N\n");
     }
 
     @Test
     public void display33ERover(){
         Rover rover = marsRover.getRover(1);
-        assertEquals(MarsRovers.display(rover),"5 1 E");
+        assertEquals(MarsRovers.display(rover),"3 3 E\n");
     }
 }
