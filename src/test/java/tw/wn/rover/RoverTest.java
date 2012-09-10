@@ -22,6 +22,7 @@ public class RoverTest {
     @Ignore
     @Test
     public void runCommandAndChangeStatusFor33E() {
+        System.out.println("it runs----------------------");
         rover = new Rover(new RoverStatus(3, 3, Orientation.E));
         rover.run("MMRMMRMRRM");
         assertEquals(new Rover(new RoverStatus(5, 5, Orientation.E)), rover);
